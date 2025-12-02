@@ -1,0 +1,225 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* app.css */
+
+/* Hero Text Slide Left Animation */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation */
+.animate-slide-left {
+  animation: slideLeft 1s ease-out forwards;
+}
+
+/* Staggered animation delays (optional) */
+.animate-delay-0 {
+  animation-delay: 0s;
+}
+.animate-delay-1 {
+  animation-delay: 0.3s;
+}
+.animate-delay-2 {
+  animation-delay: 0.6s;
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Hero image floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Navbar Down-to-Up Animation */
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.nav-animate {
+  animation: slideUp 0.7s ease-out forwards;
+  opacity: 0;
+}
+
+/* Optional stagger delays */
+.nav-delay-0 { animation-delay: 0s; }
+.nav-delay-1 { animation-delay: 0.1s; }
+.nav-delay-2 { animation-delay: 0.2s; }
+.nav-delay-3 { animation-delay: 0.3s; }
+.nav-delay-4 { animation-delay: 0.4s; }
+.nav-delay-5 { animation-delay: 0.5s; }
+.nav-delay-6 { animation-delay: 0.6s; }
+
+/* Slide from Right Animation */
+@keyframes slideRight {
+  0% {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.image-slide-right {
+  animation: slideRight 0.9s ease-out forwards, pulse 2s infinite;
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 0.8s ease-out forwards;
+}
+
+.animate-delay-0 {
+  animation-delay: 0s;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-3 {
+  animation-delay: 0.6s;
+}
+
+.download-btn-container {
+  width: 180px;
+  height: 60px;
+  position: relative;
+}
+
+.download-btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.download-btn svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+
+}
+
+.download-btn:hover {
+  /* background: #ff66ff; */
+  background: linear-gradient(270deg, #990033 10%, #0099ff 100%);
+}
+
+.download-btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.download-btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+}
