@@ -2,15 +2,13 @@ const Navbar = () => {
   const navItems = [
     { label: "Home", link: "#home" },
     { label: "About", link: "#about" },
+    { label: "Services", link: "#services" },
     { label: "Skills", link: "#skills" },
-    { label: "Education", link: "#education" },
-    { label: "Work", link: "#work" },
-    { label: "Experience", link: "#experience" },
     { label: "Contact", link: "#contact" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#030014]/40 backdrop-blur-md px-10 flex items-center justify-between">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#030014] backdrop-blur-md px-10 mt-0 pt-5 flex items-center justify-between">
       {/* LOGO */}
       {/* <img
         src="/RA.png"// if logo is inside public folder

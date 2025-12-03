@@ -223,3 +223,22 @@
   position: relative;
   z-index: 2;
 }
+
+.skill-slider {
+  display: flex;
+  animation: scroll 15s linear infinite;
+}
+
+.skill-slider:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
