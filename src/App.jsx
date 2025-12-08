@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Services from "./components/services";
+import Work from "./components/work";
 
 function App  () {
    useEffect(() => {
@@ -29,6 +30,9 @@ function App  () {
       </section>
       <section id="services">
         <Services />
+      </section>
+      <section id="work">
+        <Work />
       </section>
     </main>
   );

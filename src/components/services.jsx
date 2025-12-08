@@ -14,11 +14,11 @@ const Services = () => {
       </div>
 
       {/* SERVICES GRID */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
         {/* Web Development */}
         <div
-          className="bg-[#13142c] p-8 rounded-2xl border border-amber-400 shadow-md 
-          transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+          className="bg-neutral-950 p-6 rounded-2xl border border-neutral-800 shadow-md 
+          transition-all duration-300 hover:shadow-lg hover:-translate-y-2 border-2 hover:shadow-neutral-800"
           data-aos="flip-left"
         >
           <div className="flex justify-center ">
@@ -33,8 +33,8 @@ const Services = () => {
 
         {/* Android Development */}
         <div
-          className="bg-[#13142c] p-8 rounded-2xl border border-amber-400 shadow-md 
-           transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+          className="bg-neutral-950 p-8 rounded-2xl border border-neutral-800 shadow-md 
+           transition-all duration-300 hover:shadow-lg hover:-translate-y-2 border-2 hover:shadow-neutral-800"
           data-aos="flip-left"
         >
           <div className="flex justify-center">
@@ -50,8 +50,8 @@ const Services = () => {
 
         {/* iOS Development */}
         <div
-          className="bg-[#13142c] p-8 rounded-2xl border border-amber-400 shadow-md 
-           transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+          className="bg-neutral-950 p-8 rounded-2xl border border-neutral-800 shadow-md 
+           transition-all duration-300 hover:shadow-lg hover:-translate-y-2 border-2 hover:shadow-neutral-800"
           data-aos="flip-right"
         >
           <div className="flex justify-center">
@@ -67,8 +67,8 @@ const Services = () => {
 
         {/* Cross Platform (Flutter) */}
         <div
-          className="bg-[#13142c] p-8 rounded-2xl border border-amber-400 shadow-md 
-           transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+          className="bg-neutral-950 p-8 rounded-2xl border border-neutral-800 shadow-md 
+           transition-all duration-300 hover:shadow-lg hover:-translate-y-2 border-2 hover:shadow-neutral-800"
           data-aos="flip-right"
         >
           <div className="flex justify-center">

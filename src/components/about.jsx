@@ -17,9 +17,9 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-center leading-tight gap-20">
         <div className="md:w-1/2 flex justify-center" data-aos="fade-right">
           <img
-            src="/hero.png"
+            src="/profile.jpg"
             alt="About"
-            className="w-[350px] h-[380px] rounded-xl shadow-[0_0_25px_rgba(209,161,74,0.6)] object-cover"
+            className="w-[350px] h-[380px] rounded-xl shadow-[0_0_25px_rgba(209,161,74,0.3)] object-cover"
           />
         </div>
         <p
@@ -59,7 +59,7 @@ const About = () => {
       <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* EDUCATION */}
         <div
-          className="bg-black p-8 rounded-xl shadow-lg border border-[#D1A14A] hover:shadow-2xl transition-all duration-300 shadow-blue-300 "
+          className="bg-black p-8 rounded-xl shadow-lg border border-neutral-800 hover:shadow-2xl transition-all duration-300 shadow-neutral-800 ease-in-out"
           data-aos="zoom-out-down"
         >
           <h2 className="text-4xl font-bold bg-gradient-to-r from-[#ff66cc] to-[#666699] bg-clip-text text-transparent mb-4">
@@ -88,7 +88,7 @@ const About = () => {
 
         {/* EXPERIENCE */}
         <div
-          className="bg-black p-8 rounded-xl shadow-lg border border-[#D1A14A] hover:shadow-2xl transition-all duration-300 shadow-blue-300"
+          className="bg-black p-8 rounded-xl shadow-lg border border-neutral-800 hover:shadow-2xl transition-all duration-300 shadow-neutral-800 ease-in-out"
           data-aos="zoom-out-down"
         >
           <h2 className="text-4xl font-bold bg-gradient-to-r from-[#ff66cc] to-[#666699] bg-clip-text text-transparent mb-4">
@@ -110,7 +110,9 @@ const About = () => {
             <li>
               📱 Developed end-to-end apps:
               <br />
-              <span className="text-gray-100">Doctor Diary, Atura-Care, Paintastica, NPC and NFC</span>
+              <span className="text-gray-100">
+                Doctor Diary, Atura-Care, Paintastica, NPC and NFC
+              </span>
             </li>
           </ul>
         </div>

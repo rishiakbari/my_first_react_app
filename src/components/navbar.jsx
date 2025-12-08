@@ -4,6 +4,7 @@ const Navbar = () => {
     { label: "About", link: "#about" },
     { label: "Services", link: "#services" },
     { label: "Skills", link: "#skills" },
+    { label: "Work", link: "#work" },
     { label: "Contact", link: "#contact" },
   ];
 
