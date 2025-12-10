@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Services from "./components/services";
 import Work from "./components/work";
+import Contact from "./components/contact";
 
 function App  () {
    useEffect(() => {
@@ -33,6 +34,9 @@ function App  () {
       </section>
       <section id="work">
         <Work />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
     </main>
   );

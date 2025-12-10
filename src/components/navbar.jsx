@@ -8,6 +8,12 @@ const Navbar = () => {
     { label: "Contact", link: "#contact" },
   ];
 
+  const handleHomeClick = () => {
+    document.getElementById("home")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#030014] backdrop-blur-md px-10 mt-0 pt-5 flex items-center justify-between">
       {/* LOGO */}
@@ -16,7 +22,10 @@ const Navbar = () => {
         alt="Logo"
         className="w-12 h-12 object-contain rounded-full"
       /> */}
-      <h2 className="text-white font-semibold text-lg">
+      <h2
+        className="text-white font-semibold text-lg cursor-pointer"
+        onClick={handleHomeClick}
+      >
         <span className="text-gradient text-3xl">RA.</span>
       </h2>
 
