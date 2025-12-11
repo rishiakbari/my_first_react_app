@@ -17,17 +17,21 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#030014] backdrop-blur-md px-10 mt-0 pt-5 flex items-center justify-between">
       {/* LOGO */}
-      {/* <img
-        src="/RA.png"// if logo is inside public folder
-        alt="Logo"
-        className="w-12 h-12 object-contain rounded-full"
-      /> */}
-      <h2
+      <div className="flex items-center gap-3">
+        <img
+          src="/logo.png"
+          alt="Logo"
+          className="w-18 h-18 object-contain rounded-full"
+          onClick={handleHomeClick}
+        />
+        <h2 className="text-white font-semibold text-lg"></h2>
+      </div>
+      {/* <h2
         className="text-white font-semibold text-lg cursor-pointer"
         onClick={handleHomeClick}
       >
         <span className="text-gradient text-3xl">RA.</span>
-      </h2>
+      </h2> */}
 
       {/* NAV LINKS */}
       <nav>
